@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Book Store</title>
+        <meta name="description" content="This is our Book Store" />
+    </head>
+    <body>
+        <form action="ewq" method="get" novalidate target="_blank">
+            <input hidden value="Moaz.com1234">
+            <div>
+                <label>Username</label>
+                <input type="text" required placeholder="Name" name="User" readonly>
+            </div>
+            <br>
+            <div>
+                <label>Subject</label>
+                <input type="text" name="subject" autofocus>
+            </div>
+            <br>
+            <div>
+                <label>Password</label>
+                <input type="password" required placeholder="type a hard password" name="Pass" minlength="10"
+                    maxlength="20">
+            </div>
+            <br>
+            <div>
+                <label>Email</label>
+                <input type="email" required placeholder="type a valid Email" value="on@gmail.com" name="Mail" disabled>
+            </div>
+            <br>
+            <div>
+                <label>Range</label>
+                <input type="range" name="Range" min="10" max="100" step="10" value="50">
+            </div>
+            <br>
+            <div>
+                <label>Number</label>
+                <input type="number" name="number" min="0" max="100" step="20" value="40">
+            </div>
+            <hr>
+            <div>
+                <input id="win" type="radio" name="OS" value="windows" checked>
+                <label for="win">Windows</label>
+            </div>
+            <div>
+                <input id="lin" type="radio" name="OS" value="linux">
+                <label for="lin">Linux</label>
+            </div>
+            <div>
+                <input id="mac" type="radio" name="OS" value="Mac">
+                <label for="mac">Mac</label>
+            </div>
+            <hr>
+            <div>
+                <input id="bio" type="checkbox" name="Sub" value="Biology" checked>
+                <label for="bio">Biology</label>
+            </div>
+            <div>
+                <input id="chem" type="checkbox" name="sub" value="Chemistry">
+                <label for="chem">Chemistry</label>
+            </div>
+            <div>
+                <input id="phy" type="checkbox" name="sub" value="Physics">
+                <label for="phy">Physic</label>
+            </div>
+            <!-- 
+                    Div =>block element
+                    input =>inline element
+                    type"password" => hides the entered text
+                    type"submit" => creates a submit button
+                    required => needs to be filled to continue
+                    placeholder => helps the user to fill the form correctly or a hint
+                    type "email" => you have to type a real email not any text containing @ sign
+                    value => you will find a text already written in this feild 
+                    name => to organize the entered data by names and classify them
+                    action => the place where the data will go for back-end
+                    method => (git)shows the data in URL
+                    method => (post)hides the data from URL
+                    hidden => a feild hidden from the user interface 
+                    reset => deletes the data inside the feilds
+                    min & max => for the min and max values to be entered 
+                    step => each step you move who much it will increase in number
+                    value => the place to start from in numbers
+                    <br>
+                    readonly => you can't change the information inside but it will still be sent to the server
+                    disabled => you can't change the information inside and the information will not be sent to th server
+                    autofocus => when you enter the website it will focus you on this feild
+                    minlength => min number of character to enter
+                    maxlength => max number of character to enter
+                    <br>
+                    radio => to choose one from many options
+                    in this type you should write label after the input
+                    checked => when you open the page it will be checked automatically
+                    to link between the label and input => add (id) for input and add (for) in label
+                    checkbox => if you want to choose more than one option or none
+                    <br>
+                    novalidate => to send the information without filling any form for TESTING
+                    target:"_blank" => to open the form in a new tab, helps in TESTING
+                -->
+            <div>
+                <label for="book">Choose Book</label>
+                <select name="book" id="book" multiple>
+                    <optgroup label="islamic books">
+                        <option value="1" selected>Book 1</option>
+                        <option value="2">Book 2</option>
+                        <option value="3">Book 3</option>
+                    </optgroup>
+                    <optgroup label="action books">
+                        <option value="4">Book 4</option>
+                        <option value="5">Book 5</option>
+                        <option value="6">Book 6</option>
+                    </optgroup>
+                    <optgroup label="cooking books">
+                        <option value="7">Book 7</option>
+                        <option value="8">Book 8</option>
+                        <option value="9">Book 9</option>
+                    </optgroup>
+                </select>
+            </div>
+            <!-- 
+                label first then select and then options inside select
+                when you submit the (value) will be sent and not the name between the option element
+                optgroup => to group the options in categories
+                multiple => allows you to choose more than one option
+                selected => option will be selected automatically when you open the page
+            -->
+            <hr>
+            <br>
+            <br>
+            <textarea name="subject" cols="30" rows="6" placeholder="Text Test"></textarea>
+            <br>
+            <br>
+            <input type="color" value="color">
+            <br>
+            <br>
+            <div>
+                <label>Upload</label>
+                <input type="file">
+            </div>
+            <br>
+            <hr>
+            <div>
+                <label>Search</label>
+                <input type="search">
+            </div>
+            <br>
+            <hr>
+            <div>
+                <label>URL</label>
+                <input type="url">
+            </div>
+            <br>
+            <hr>
+            <div>
+                <label>Date</label>
+                <input type="date">
+            </div>
+            <br>
+            <hr>
+            <div>
+                <label>Month</label>
+                <input type="month">
+            </div>
+            <br>
+            <hr>
+            <div>
+                <label>Time</label>
+                <input type="time">
+            </div>
+            <br>
+            <hr>
+            <label>Programming languages</label>
+            <input list="programming" name="prog">
+            <datalist id="programming">
+                <option value="Pyhton">
+                <option value="PHP">
+                <option value="C#">
+                <option value="C++">
+                <option value="Scala">
+            </datalist>
+            <!-- 
+                you link the input with datalist by using id of the same name as list.
+                option does not need to be closed
+                name => To catagorize it when the data is sent
+                you can search for the word containing a specific letter (LIST)
+                BUT select element you to scroll down to get the word you want 
+             -->
+            <br>
+            <hr>
+            <input type="submit" value="Save">
+            <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>

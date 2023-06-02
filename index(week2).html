@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Book store</title>
+        <meta name="description" content="this is our book store" />
+    </head>
+    <body>
+        <h1>Book Store</h1>
+        <p>This Is My <b>Book Store</b>, Welcome</p>
+        <br>
+        <table border="1">
+            <caption>
+                Students Marks 
+            </caption>
+            <thead>
+                <tr>
+                    <th>First</th>
+                    <th>Last</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Osama</td>
+                    <td>Ali</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Moaz</td>
+                    <td>Ahmed</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Khalid</td>
+                    <td>mahmoud</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Monir</td>
+                    <td>basha</td>
+                    <td>40</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td>160</td>
+                </tr>
+            </tfoot>
+        </table>
+        <!-- 
+            thead
+            tbody
+            tfoot
+            tr => Table Row
+            td => Table Data Cell
+            th => Table Header Cell
+            colspan => Merge two coloumns together in one Cell
+            rowspan => merge two rows together in one cell
+            (Don't Use border in HTML)
+         -->
+         <br>
+         <br>
+         <br>
+         <span>My table</span>
+         <p>This Is Second paraghraph, <br/> Test <br> Marks</p>
+         <hr>
+         <!-- 
+             Span => To control a specific word for CSS
+             br => break
+             hr => horizental rule
+          -->
+        <br>
+        <br>
+        <br>
+        <div>
+        <h1>Book Store</h1>
+        <p>This Is My <b>Book Store</b>, Welcome</p>
+        </div>
+        <div>
+            <div class="Romantic">
+                <div class="Book">
+                    <h3>Book Title</h3>
+                    <p>Book Description</p>
+                    <span>$100</span>
+                </div>
+                <div class="Book">
+                    <h3>Book Title</h3>
+                    <p>Book Description</p>
+                    <span>$100</span>
+                </div>
+                <div class="Book">
+                    <h3>Book Title</h3>
+                    <p>Book Description</p>
+                    <span>$100</span>
+                </div>
+            </div>
+            <div class="Police">
+                <div class="Book">
+                    <h3>Book Title</h3>
+                    <p>Book Description</p>
+                    <span>$100</span>
+                </div>
+                <div class="Book">
+                    <h3>Book Title</h3>
+                    <p>Book Description</p>
+                    <span>$100</span>
+                </div>
+                <div class="Book">
+                    <h3>Book Title</h3>
+                    <p>Book Description</p>
+                    <span>$100</span>
+                </div>
+            </div>
+            <div class="Fantasy">
+                <div class="Book">
+                    <h3>Book Title</h3>
+                    <p>Book Description</p>
+                    <span>$100</span>
+                </div>
+                <div class="Book">
+                    <h3>Book Title</h3>
+                    <p>Book Description</p>
+                    <span>$100</span>
+                </div>
+                <div class="Book">
+                    <h3>Book Title</h3>
+                    <p>Book Description</p>
+                    <span>$100</span>
+                </div>
+            </div>
+        </div>
+        <!-- 
+            Divisions or categorization
+            div => it acts like a container for the content inside it
+                so you can change the elements for a group of things from one place (not for text)
+            p => for text
+        -->
+        <br>
+        <br>
+        <br>
+        <div> This is  My &lt;p&gt; Div &copy; &radic;</div>
+        <!-- 
+            HTML Entities => Shortcut for a simbol so can you use it without errors
+            you start with (&) and end with (;)
+            like &copy;  &radiac; &gt; &lt; (gt= greater than  lt= less than)
+            search on google for more symbols
+        -->
+        <br>
+        <br>
+        <header> Head Of Website</header>
+        <nav> The links on top of the page to navigate through the whole website</nav>
+        <section>
+            <section> section of the page on the right </section>
+            <aside> the side bar on the left </aside>
+        </section>
+        <main></main>
+        <article></article>
+        <footer></footer>
+        <img src="https://www.tech-prastish.com/wp-content/uploads/2019/01/differences-between-html-and-html5.png" alt="" width="50%">
+        <!-- 
+        These Elements are used instead of DIV because they are more logical
+        -->
+        <br>
+        <br>
+        <br>
+        <audio controls autoplay loop muted >
+            <source src="media/sample-3s.mp3" type="audio/mpeg">
+            <source src="media/sample-3s.wav" type="audio/wav">
+            <source src="media/sample-3s.ogg" type="audio/ogg">
+            Your Browser does not support audio tag
+        </audio>
+        <!-- 
+            Type => MIME type of the file
+            controls like play and pause and volume up&down
+            autoplay = when u open the website the audio will play auto (not working on google now)
+            loop cuz endless loop
+            muted mute the audio of source
+        -->
+        <br>
+        <br>
+        <br>
+        <video control width="800" height="500" autoplay loop muted poster="home/sample-boat-400x300.png">
+            <source src="media/sample-5s.mp4" type="video/mp4">
+            <source src="media/sample-5s.webm" type="video/webm">
+            your Browser does not support video tag
+            <track src="my_file_eng.vtt" kind="subtitles" srclang="eng" label="English">
+            <track src="my_file_it.vtt" kind="subtitles" srclang="it" label="Italian">
+        </video>
+        <br>
+        <br>
+        <br>
+        <form action="" method="get">
+            <input hidden value="Moaz.com1234">
+            <div>
+                <label>Username</label>
+                <input type="text" required placeholder="Name" name="User">
+            </div>
+            <br>
+            <div>
+                <label>Subject</label>
+                <input type="text" name="subject">
+            </div>
+            <br>
+            <div>
+                <label>Password</label>
+                <input type="password" required placeholder="type a hard password" name="Pass">
+            </div>
+            <br>
+            <div>
+                <label>Email</label>
+                <input type="email" required placeholder="type a valid Email" value="on@gmail.com" name="Mail">
+            </div>
+            <br>
+            <div>
+                <label>Range</label>
+                <input type="range"  name="Range" min="10" max="100" step="10" value="50">
+            </div>
+            <br>
+            <div>
+                <label>Number</label>
+                <input type="number"  name="number" min="0" max="100" step="20" value="40">
+            </div>
+            <br>
+            <input type="color" value="color">
+            <br>
+            <input type="submit" value="Save">
+            <input type="reset" value="Reset">
+            <!-- 
+                Div =>block element
+                input =>inline element
+                type"password" => hides the entered text
+                type"submit" => creates a submit button
+                required => needs to be filled to continue
+                placeholder => helps the user to fill the form correctly or a hint
+                type "email" => you have to type a real email not any text containing @ sign
+                value => you will find a text already written in this feild 
+                name => to organize the entered data by names and classify them
+                action => the place where the data will go for back-end
+                method => (git)shows the data in URL
+                method => (post)hides the data from URL
+                hidden => a feild hidden from the user interface 
+                reset => deletes the data inside the feilds
+                min & max => for the min and max values to be entered 
+                step => each step you move who much it will increase in number
+                value => the place to start from in numbers
+             -->
+        </form>
+    </body>
+</html>
